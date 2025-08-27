@@ -123,7 +123,7 @@ Welcome to my personal server setup! This is where I've channeled my cybersecuri
 | Service | Purpose | Access |
 |---------|---------|--------|
 | **Homepage** | Service dashboard | `home.your-domain.com` |
-| **Media Hub** | Media recommendations | Custom interface |
+| **Media Hub** | Media recommendations | `review.your-domain.com` |
 
 ---
 
