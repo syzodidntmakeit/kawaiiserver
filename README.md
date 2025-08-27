@@ -62,7 +62,7 @@ Welcome to my personal server setup! This is where I've channeled my cybersecuri
 ### 🗂️ File Management
 | Service | Purpose | Why This One |
 |---------|---------|--------------|
-| **OpenMediaVault** | NAS management | TrueNAS-based, intuitive setup |
+| **Filebrowser** | File manager | server side files management , intuitive setup |
 | **Nextcloud** | File sync & sharing | Your own Google Drive, but better |
 
 ### 🏴‍☠️ Content Acquisition *(arr Stack)*
