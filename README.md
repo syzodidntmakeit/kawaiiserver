@@ -29,29 +29,47 @@ Welcome to my personal server setup! This is where I've channeled my cybersecuri
 | **Form Factor** | SFF (Small Form Factor) | Tower | Upgradability matters |
 | **GPU** *(Optional)* | - | RTX 3060 / RX 6800 | Local AI models |
 
-### NAS Hardware (Separate Box Recommended)
+### NAS Hardware (Orange Pi 5 Recommended)
 
-| Option | Cost | Pros | Cons |
-|--------|------|------|------|
-| **Raspberry Pi 4** | ~$75 | Ultra low power, silent | Limited to USB 3.0 speeds |
-| **Orange Pi 5** | ~$60 | Better I/O, PCIe slot | Less community support |
-| **Used Mini PC** | ~$100-150 | Full x86, SATA ports | Higher power consumption |
-| **Dedicated NAS** | $200+ | Purpose-built | Overkill for most |
+| Option | Cost (SGD) | Pros | Cons |
+|--------|------------|------|------|
+| **Orange Pi 5 Kit** | ~$290 | RK3588S CPU, PCIe NVMe, USB 3.0, complete kit | Less community support than Pi |
+| **Raspberry Pi 4** | ~$120 | Massive community, proven reliability | Limited to USB 3.0 speeds |
+| **Used Mini PC** | ~$160 | Full x86, SATA ports, overkill performance | Higher power consumption |
+
+*The Orange Pi 5 hits the sweet spot - powerful enough for advanced NAS features, efficient enough for 24/7 operation*
 
 *Why separate? Keep your media safe when you inevitably break the main server while tinkering.*
 
 ### Storage Strategy
-- **Main Server**: Fast SSD for OS and containers
-- **NAS Box**: Large, slow drives for bulk storage (4TB+ recommended)
-- **Connection**: SMB/NFS shares mounted to main server
+- **Main Server**: 512GB NVMe for OS, containers, and configs
+- **NAS Box**: 32GB eMMC for OS + 4TB WD Red for media storage  
+- **Bonus Storage**: 1TB HDD from main server (backup/overflow)
+- **Connection**: SMB/NFS shares mounted from Orange Pi 5 to main server
 
-### Suggested Hardware (Tested Configs)
+### Suggested Hardware (Singapore Pricing - Tested Configs)
 
-| Model | CPU | RAM | Storage | Est. Price |
-|-------|-----|-----|---------|------------|
-| Dell OptiPlex 5070 SFF | i5-9500 (6C/6T) | 16GB | 512GB NVMe + 1TB SSD | ~$300 |
-| HP EliteDesk 800 G5 Mini | i5-9500T (6C/6T) | 16GB | 256GB NVMe + 512GB HDD | ~$238 |
-| Lenovo ThinkCentre M920q | i5-9500T (6C/6T) | 16GB | 480GB SSD | ~$299 |
+### Suggested Hardware (Singapore Pricing - ACTUAL Tested Deals!)
+
+**🎯 Recommended Setup (Total: ~$668 SGD) - *Confirmed Available***
+
+| Component | Specs | Price | Source |
+|-----------|-------|--------|---------|
+| **Main Server** | Dell OptiPlex - i5-10500T, 16GB RAM, 512GB NVMe, 1TB HDD | $278 | Carousell |
+| **NAS Box** | Orange Pi 5 - 8GB RAM, 32GB eMMC, PSU, Heatsink (Complete Kit) | $290 | Shopee |
+| **Storage** | 4TB WD Red HDD | $70 | Carousell |
+| **Network Switch** | D-Link DGS-1100-08V2 - 8 Port Gigabit Managed | $30 | Carousell |
+
+**💡 Additional Items Needed (~$20-40)**
+- Ethernet cables (Cat6) x3: ~$15
+- USB 3.0 to SATA adapter for external HDD: ~$10-15
+- Optional UPS for power protection: ~$60-100
+
+**🔧 Future Upgrades**
+- RAM upgrade to 32GB: ~$50-80 (when needed)
+- Additional storage drives as collection grows
+
+*This setup gives you enterprise-grade homelab performance for less than most people spend on a gaming GPU!*
 
 *Pro tip: Old office PCs are perfect for this. Let some corporation's depreciation be your gain.*
 
@@ -169,10 +187,11 @@ Welcome to my personal server setup! This is where I've channeled my cybersecuri
 
 1. **Get Hardware**: Snag an old office PC or use what you have
 2. **Install Arch**: Because we're not casuals here
-3. **Setup Docker**: The foundation of everything
-4. **Configure Cloudflare**: Buy a domain, set up DNS
-5. **Setup NAS**: Separate hardware for storage (Pi or mini PC)
-6. **Deploy Services**: Start with essentials, expand gradually
+2. **Setup Docker**: The foundation of everything
+3. **Configure Cloudflare**: Buy a domain, set up DNS  
+4. **Setup NAS**: Orange Pi 5 with OpenMediaVault
+5. **Configure Network**: D-Link managed switch for proper VLANs
+6. **Deploy Services**: Start with Jellyfin + arr stack, expand gradually
 7. **Secure Everything**: UFW, Fail2Ban, proper authentication
 
 *Detailed setup guides coming soon™*
@@ -234,4 +253,12 @@ Want to share your setup? I'd love to see it!
 
 ---
 
-*P.S. - Yes, this setup runs my Rei Ayanami fanfiction archive. No, you can't have access. Some things are sacred. And yes, I switched to Debian. Character growth is real.*
+*P.S. - Yes, this setup runs my Rei Ayanami fanfiction archive. No, you can't have access. Some things are sacred. And yes, I switched to Debian AND found amazing Singapore deals on Shopee/Carousell. Character growth is real.*
+
+### 🛒 **Singapore Shopping Pro Tips**
+- **Carousell**: Best deals on used business PCs AND networking gear (that $30 switch though! 🔥)
+- **Shopee**: Great for SBC kits like Orange Pi, watch for flash sales
+- **Sim Lim Square**: Components and cables, but Carousell might be cheaper
+- **Lazada**: Backup option if Shopee stock runs out
+- **Local Facebook Groups**: Sometimes hidden gems in tech swap groups
+- **Pro Tip**: Check Carousell notifications daily - good deals disappear fast!
