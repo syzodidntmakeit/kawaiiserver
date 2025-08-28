@@ -49,9 +49,7 @@ Welcome to my personal server setup! This is where I've channeled my cybersecuri
 
 ### Suggested Hardware (Singapore Pricing - Tested Configs)
 
-### Suggested Hardware (Singapore Pricing - ACTUAL Tested Deals!)
-
-**🎯 Recommended Setup (Total: ~$668 SGD) - *Confirmed Available***
+**🎯 Recommended Setup (Total: ~$668 SGD)
 
 | Component | Specs | Price | Source |
 |-----------|-------|--------|---------|
