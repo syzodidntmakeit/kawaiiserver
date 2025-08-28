@@ -184,7 +184,7 @@ Welcome to my personal server setup! This is where I've channeled my cybersecuri
 ## 🚀 Quick Start
 
 1. **Get Hardware**: Snag an old office PC or use what you have
-2. **Install Arch**: Because we're not casuals here
+2. **Install Debain**: Because we're not casuals here
 2. **Setup Docker**: The foundation of everything
 3. **Configure Cloudflare**: Buy a domain, set up DNS  
 4. **Setup NAS**: Orange Pi 5 with OpenMediaVault
@@ -230,7 +230,7 @@ Want to share your setup? I'd love to see it!
 
 ## 📚 Resources
 
-- [Arch Wiki](https://wiki.archlinux.org/) - Your new best friend
+- [Debain Wiki](https://wiki.debian.org/) - Your new best friend
 - [Docker Documentation](https://docs.docker.com/) - Container mastery
 - [Cloudflare Docs](https://developers.cloudflare.com/) - Domain & DNS magic
 - [r/selfhosted](https://reddit.com/r/selfhosted) - Community wisdom
