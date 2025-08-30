@@ -123,7 +123,7 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 | Storage | 4TB WD Red HDD | $70 | Carousell |
 | Network Switch | D-Link DGS-1100-08V2 (8-Port Managed) | $30 | Carousell |
 
-💡 Additional: Cat6 cables (~$15), USB 3.0 → SATA adapter (~$10-15), UPS (~$60-100)
+💡 Additional: Cat6 cables (~$15), USB 3.0 to SATA adapter (~$10-15), UPS (~$60-100)
 
 ---
 
