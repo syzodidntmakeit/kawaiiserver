@@ -20,9 +20,9 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 
 ### Utility Server
 - **Vaultwarden** ✅ – Self-hosted password manager (Bitwarden fork)
-- **Portainer** – Docker container manager
+- **Portainer** ✅ – Docker container manager
 - **Watchtower** – Automatic Docker updates
-- **qBittorrent** – Torrent client (with Gluetun + Mullvad VPN)
+- **qBittorrent** ✅ – Torrent client
 - **Prowlarr** – Indexer for *arr stack
 - **Sonarr** – TV shows (→ Jellyfin)
 - **Radarr** – Movies (→ Jellyfin)
@@ -39,7 +39,7 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 ### Notes & Text Editing
 - **Memos** ✅ – Lightweight Markdown notes
 - **Trilium** ✅ – Encrypted, hierarchical notes
-- **VS Code Server** – Browser-based code editor
+- **VS Code Server** ✅ – Browser-based code editor
 - **Bookstack** – Wiki-style documentation
 
 ### Privacy Tools
