@@ -9,7 +9,6 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 ### Media Server
 - **Jellyfin** – Open source Netflix replacement, clean UI
 - **Navidrome** – Streams FLAC, pulls great metadata
-- **Calibre** – Ebook library management
 
 ### File Storage
 - **Filebrowser** ✅ – File management in browser
@@ -28,7 +27,6 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 - **Sonarr** – TV shows (→ Jellyfin)
 - **Radarr** – Movies (→ Jellyfin)
 - **Lidarr** – Music (→ Navidrome)
-- **Readarr** – Books (→ Calibre)
 - **Bazarr** – Subtitles for media servers
 
 ### Server Monitoring
@@ -39,7 +37,7 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 - **Tailscale** – Secure SSH / VPN overlay
 
 ### Notes & Text Editing
-- **Memos** – Lightweight Markdown notes
+- **Memos** ✅ – Lightweight Markdown notes
 - **Trilium** ✅ – Encrypted, hierarchical notes
 - **VS Code Server** – Browser-based code editor
 - **Bookstack** – Wiki-style documentation
