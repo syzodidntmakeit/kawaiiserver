@@ -9,10 +9,22 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 ### Media Server
 - **Jellyfin** ✅ – Open source Netflix replacement, clean UI
 - **Navidrome** ✅ – Streams FLAC, pulls great metadata
+- **Prowlarr** ✅ – Indexer for *arr stack
+- **Sonarr** ✅ – TV shows (→ Jellyfin)
+- **Radarr** ✅ – Movies (→ Jellyfin)
+- **Lidarr** ✅ – Music (→ Navidrome)
+- **Bazarr** – Subtitles for media servers
 
 ### File Storage
 - **Filebrowser** ✅ – File management in browser
 - **Nextcloud** ✅ – File syncing across devices
+
+### Socials
+- **Mastodon** - Self-hosted Twitter
+- **Lemmy** - Self-hosted Reddit
+- **Matrix + Element** - Self-hosted Discord (resource-heavy)
+- **Pixelfed** - Self-hosted Instagram
+- **PeerTube** - Self-hosted YouTube
 
 ### Web Server
 - **Traefik** – Docker-integrated, auto-SSL reverse proxy
@@ -20,27 +32,23 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 
 ### Utility Server
 - **Vaultwarden** ✅ – Self-hosted password manager (Bitwarden fork)
-- **Portainer** ✅ – Docker container manager
 - **Watchtower** – Automatic Docker updates
 - **qBittorrent** ✅ – Torrent client
-- **Prowlarr** ✅ – Indexer for *arr stack
-- **Sonarr** ✅ – TV shows (→ Jellyfin)
-- **Radarr** ✅ – Movies (→ Jellyfin)
-- **Lidarr** ✅ – Music (→ Navidrome)
-- **Bazarr** – Subtitles for media servers
 
-### Server Monitoring
-- **Grafana** – Advanced monitoring & dashboards
+### Server Management
+- **Grafana + Prometheus** – Advanced monitoring & dashboards
 - **Netdata** – Deep server insights
+- - **Portainer** ✅ – Docker container manager
 - **Dashdot** – Lightweight system stats
 - **Uptime Kuma** – Service uptime monitoring
 - **Tailscale** – Secure SSH / VPN overlay
 
-### Notes & Text Editing
+### Text Editing & Document Management
 - **Memos** ✅ – Lightweight Markdown notes
 - **Trilium** ✅ – Encrypted, hierarchical notes
 - **VS Code Server** ✅ – Browser-based code editor
 - **Bookstack** – Wiki-style documentation
+- **Paperless-ngx** - Document management system
 
 ### Privacy Tools
 - **SearXNG** – Private search engine
