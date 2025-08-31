@@ -7,8 +7,8 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 ## 🖥️ Services
 
 ### Media Server
-- **Jellyfin** – Open source Netflix replacement, clean UI
-- **Navidrome** – Streams FLAC, pulls great metadata
+- **Jellyfin** ✅ – Open source Netflix replacement, clean UI
+- **Navidrome** ✅ – Streams FLAC, pulls great metadata
 
 ### File Storage
 - **Filebrowser** ✅ – File management in browser
@@ -23,10 +23,10 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 - **Portainer** ✅ – Docker container manager
 - **Watchtower** – Automatic Docker updates
 - **qBittorrent** ✅ – Torrent client
-- **Prowlarr** – Indexer for *arr stack
-- **Sonarr** – TV shows (→ Jellyfin)
-- **Radarr** – Movies (→ Jellyfin)
-- **Lidarr** – Music (→ Navidrome)
+- **Prowlarr** ✅ – Indexer for *arr stack
+- **Sonarr** ✅ – TV shows (→ Jellyfin)
+- **Radarr** ✅ – Movies (→ Jellyfin)
+- **Lidarr** ✅ – Music (→ Navidrome)
 - **Bazarr** – Subtitles for media servers
 
 ### Server Monitoring
@@ -46,6 +46,7 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 - **SearXNG** – Private search engine
 - **Whoogle** – Google frontend without tracking
 - **Kiwix** – Local Wikipedia
+- **Gluetun** ✅ - VPN Client (Using Mullvad VPN)
 - **Fail2Ban** – SSH brute force protection
 - **UFW** – Firewall
 
