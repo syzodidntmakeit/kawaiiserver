@@ -69,7 +69,7 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 - **Firefly III** – Personal finance tracker
 
 ### Websites
-- **Homepage** – Dashboard hub for services
+- **Homepage** ✅ – Dashboard hub for services
 - **Media Hub** – Aggregated media service hub
 
 ---
