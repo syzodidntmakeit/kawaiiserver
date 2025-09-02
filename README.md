@@ -39,8 +39,7 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 - **Grafana + Prometheus** – Advanced monitoring & dashboards
 - **Netdata** – Deep server insights
 - **Portainer** ✅ – Docker container manager
-- **Dashdot** – Lightweight system stats
-- **Uptime Kuma** – Service uptime monitoring
+- **Dashdot** ✅ – Lightweight system stats
 - **Tailscale** – Secure SSH / VPN overlay
 
 ### Text Editing & Document Management
@@ -51,8 +50,7 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 - **Paperless-ngx** - Document management system
 
 ### Privacy Tools
-- **SearXNG** – Private search engine
-- **Whoogle** – Google frontend without tracking
+- **SearXNG** ✅ – Private search engine
 - **Kiwix** – Local Wikipedia
 - **Gluetun** ✅ - VPN Client (Using Mullvad VPN)
 - **Fail2Ban** – SSH brute force protection
@@ -60,7 +58,7 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 
 ### Local Knowledge
 - **Kiwix** – Local Wikipedia
-- **Ollama** – Local text generation
+- **Ollama** ✅ – Local text generation
 - **Stable Diffusion** – Image generation
 
 ### Navigation
