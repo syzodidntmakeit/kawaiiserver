@@ -60,6 +60,7 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 - **Kiwix** – Local Wikipedia
 - **Ollama** ✅ – Local text generation
 - **Stable Diffusion** – Image generation
+- **Wiki RAG** - An AI trained on and only focuses on wikipedia
 
 ### Navigation
 - **OpenStreetMap** – Tile service
