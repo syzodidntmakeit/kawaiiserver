@@ -38,7 +38,7 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 ### Server Management
 - **Grafana + Prometheus** – Advanced monitoring & dashboards
 - **Netdata** – Deep server insights
-- - **Portainer** ✅ – Docker container manager
+- **Portainer** ✅ – Docker container manager
 - **Dashdot** – Lightweight system stats
 - **Uptime Kuma** – Service uptime monitoring
 - **Tailscale** – Secure SSH / VPN overlay
