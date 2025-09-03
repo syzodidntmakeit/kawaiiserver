@@ -29,6 +29,7 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 ### Web Server
 - **Traefik** – Docker-integrated, auto-SSL reverse proxy
 - **Nginx** – Sophisticated reverse proxy, more control
+- **Cloudflared tunnel** - Reverse Proxy with Cloudflare domain name (kawaii-san.org)
 
 ### Utility Server
 - **Vaultwarden** ✅ – Self-hosted password manager (Bitwarden fork)
