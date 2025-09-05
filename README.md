@@ -39,19 +39,19 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 ### Server Management
 - **Grafana + Prometheus** – Advanced monitoring & dashboards
 - **Netdata** – Deep server insights
-- **Portainer** – Docker container manager
+- **[Portainer](./portainer)** – Docker container manager
 - **Dashdot** – Lightweight system stats
 - **Tailscale** – Secure SSH / VPN overlay
 
 ### Text Editing & Document Management
-- **Memos** – Lightweight Markdown notes
+- **[Memos](./memos)** – Lightweight Markdown notes
 - **[Trilium](./trilium)** – Encrypted, hierarchical notes
 - **VS Code Server** – Browser-based code editor
 - **Bookstack** – Wiki-style documentation
 - **Paperless-ngx** - Document management system
 
 ### Privacy Tools
-- **SearXNG** – Private search engine
+- **[SearXNG](./searxng)** – Private search engine
 - **Kiwix** – Local Wikipedia
 - **Gluetun** - VPN Client (Using Mullvad VPN)
 - **Fail2Ban** – SSH brute force protection
