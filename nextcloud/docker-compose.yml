@@ -1,0 +1,43 @@
+services:
+  nextcloud:
+    image: nextcloud:latest
+    container_name: nextcloud
+    restart: unless-stopped
+    ports:
+      - "9002:80"
+    networks:
+      - kawaiinet
+    volumes:
+      - nextcloud_data:/var/www/html
+      - ./apps:/var/www/html/custom_apps
+      - ./config:/var/www/html/config
+      - ./data:/var/www/html/data
+    environment:
+      - NEXTCLOUD_TRUSTED_DOMAINS=cloud.kawaii-san.org
+      - MYSQL_HOST=nextcloud-db
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+      - MYSQL_PASSWORD=your_secure_password_here
+      - MYSQL_ROOT_PASSWORD=your_secure_root_password_here
+
+  nextcloud-db:
+    image: mariadb:10.6
+    container_name: nextcloud-db
+    restart: unless-stopped
+    networks:
+      - kawaiinet
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=your_secure_root_password_here
+      - MYSQL_PASSWORD=your_secure_password_here
+      - MYSQL_DATABASE=nextcloud
+      - MYSQL_USER=nextcloud
+
+volumes:
+  nextcloud_data:
+  db_data:
+
+networks:
+  kawaiinet:
+    external: true
