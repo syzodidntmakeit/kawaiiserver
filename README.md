@@ -76,6 +76,41 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 
 ---
 
+## 🔐 Privacy-First Client Applications
+
+While self-hosting handles the server side, I've also migrated to privacy-respecting alternatives on the client side. Why give Big Tech your data when better options exist?
+
+### Daily Drivers
+- **Mullvad Browser** → Replaced Chrome/Edge (Tor Browser without Tor, €5/month VPN = SGD 7.48)
+- **NewPipe** → YouTube without ads/tracking (pairs with self-hosted Piped)
+- **OsmAnd** → Google Maps replacement (offline OSM data)
+- **Signal** → WhatsApp for secure messaging
+- **Thunderbird** → Gmail web client replacement
+- **LibreOffice** → Microsoft Office alternative
+
+### Mobile Privacy Stack
+- **F-Droid** → Google Play Store for FOSS apps
+- **Aurora Store** → Anonymous Google Play access
+- **Brave Search** → Google Search (when SearXNG isn't available)
+- **Organic Maps** → OsmAnd alternative for lighter usage
+
+### Cost Breakdown (Monthly)
+| Service | Cost | Savings vs Big Tech |
+|---------|------|-------------------|
+| Mullvad VPN | €5 ($7.48 SGD) | vs ExpressVPN $12.95 |
+| Domain + CF | ~$1 | vs Google Workspace $6 |
+| **Total** | **~$8.50 SGD** | **vs $20+ for equivalent** |
+
+### Why This Matters
+- **No tracking** across services
+- **Open source** = auditable code
+- **One-time costs** vs subscription hell
+- **Actually faster** (no bloat/ads)
+- **Works offline** when self-hosted services are down
+- **Moral superiority** in tech discussions ✨
+
+---
+
 ## ⚙️ System Hardware
 
 ### Options (SGD Pricing)
@@ -196,4 +231,4 @@ Got improvements, optimizations, or security fixes? Open an issue or PR!
 
 ---
 
-> P.S. Yes, this setup runs my Rei Ayanami fanfiction archive. No, you can’t have access. Some things are sacred. 🫡
+> P.S. Yes, this setup runs my Rei Ayanami fanfiction archive. No, you can't have access. Some things are sacred. 🫡
