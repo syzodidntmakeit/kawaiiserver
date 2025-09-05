@@ -32,7 +32,7 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 - **Cloudflared tunnel** - Reverse Proxy with Cloudflare domain name (kawaii-san.org)
 
 ### Utility Server
-- **Vaultwarden** – Self-hosted password manager (Bitwarden fork) ✅
+- **[Vaultwarden](./vaultwarden)** – Self-hosted password manager (Bitwarden fork) ✅
 - **Watchtower** – Automatic Docker updates
 - **qBittorrent** – Torrent client
 
