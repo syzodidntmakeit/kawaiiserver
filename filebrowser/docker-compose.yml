@@ -1,0 +1,30 @@
+services:
+  filebrowser:
+    image: filebrowser/filebrowser:latest
+    container_name: filebrowser
+    restart: unless-stopped
+    ports:
+      - "9003:80"
+    networks:
+      - kawaiinet
+    user: "1000:1000"  # Runs as your user:group
+    volumes:
+      - /:/srv  # Mounts the entire root filesystem
+      - ./filebrowser.json:/config/filebrowser.json
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      - PUID=1000
+      - PGID=1000
+    cap_add:
+      - CHOWN
+      - SETUID
+      - SETGID
+      - DAC_OVERRIDE  # Allows file permission overrides
+
+volumes:
+  filebrowser-config:
+
+networks:
+  kawaiinet:
+    external: true
