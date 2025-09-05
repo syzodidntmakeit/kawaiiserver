@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  memos:
+    image: ghcr.io/usememos/memos:latest
+    container_name: memos
+    restart: unless-stopped
+    ports:
+      - "9005:5230"  # Memos runs on port 5230 internally
+    networks:
+      - kawaiinet
+    environment:
+      - MEMOS_MODE=prod
+      - MEMOS_PORT=5230
+      - MEMOS_DATA=/var/opt/memos
+    volumes:
+      - memos_data:/var/opt/memos
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:5230"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  memos_data:
+
+networks:
+  kawaiinet:
+    external: true
