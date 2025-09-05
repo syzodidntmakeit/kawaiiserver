@@ -17,7 +17,7 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 
 ### File Storage
 - **Filebrowser** – File management in browser
-- **Nextcloud** – File syncing across devices
+- **[Nextcloud](./nextcloud)** – File syncing across devices ✅
 
 ### Socials
 - **Mastodon** - Self-hosted Twitter
