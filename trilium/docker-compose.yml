@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  trilium:
+    image: zadam/trilium:latest
+    container_name: trilium
+    restart: unless-stopped
+    ports:
+      - "9004:8080"
+    networks:
+      - kawaiinet
+    volumes:
+      - trilium-data:/home/node/trilium-data
+
+volumes:
+  trilium-data:
+
+networks:
+  kawaiinet:
+    external: true
