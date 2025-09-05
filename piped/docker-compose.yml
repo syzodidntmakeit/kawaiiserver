@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  piped:
+    image: ghcr.io/team-piped/piped:latest
+    container_name: piped
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:9004:8080"  # Piped web interface
+    environment:
+      - FRONTEND_URL=https://youtube.kawaii-san.org
+      - PROXY_URL=https://pipedproxy.kawaii-san.org
+      - SPONSORBLOCK_URL=https://sponsorblock.kawaii-san.org
+    networks:
+      - kawaiinet
+
+  # Optional: SponsorBlock service
+  sponsorblock:
+    image: ghcr.io/ajayyy/sponsorblock:latest
+    container_name: sponsorblock
+    restart: unless-stopped
+    ports:
+      - "9006:8080"
+    networks:
+      - kawaiinet
+
+networks:
+  kawaiinet:
+    external: true
