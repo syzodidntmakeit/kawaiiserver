@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  memos:
+    image: neosmemo/memos:latest
+    container_name: memos
+    volumes:
+      - ./memos-data:/var/opt/memos
+    ports:
+      - '9005:5230' # Map host port 9005 to Memos' internal port 5230
+    networks:
+      - kawaiinet
+    restart: unless-stopped
+
+networks:
+  kawaiinet:
+    external: true
