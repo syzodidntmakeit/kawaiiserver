@@ -16,7 +16,7 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 - **Bazarr** – Subtitles for media servers
 
 ### File Storage
-- **Filebrowser** – File management in browser ✅
+- **[Filebrowser](./filebrowser)** – File management in browser ✅
 - **[Nextcloud](./nextcloud)** – File syncing across devices ✅
 
 ### Socials
