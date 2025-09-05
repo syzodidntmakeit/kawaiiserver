@@ -1,0 +1,23 @@
+services:
+  vaultwarden:
+    image: vaultwarden/server:latest
+    container_name: vaultwarden
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:9001:80"  # Bind to localhost only for Cloudflare Tunnel
+    environment:
+      - SIGNUPS_ALLOWED=false  # Disable public signups (recommended)
+      - WEBSOCKET_ENABLED=true
+      - ADMIN_TOKEN=your_very_secure_admin_token_here  # Change this!
+    volumes:
+      - vaultwarden_data:/data
+    networks:
+      - kawaiinet
+
+volumes:
+  vaultwarden_data:
+    driver: local
+
+networks:
+  kawaiinet:
+    external: true  # This tells Compose to use an existing network
