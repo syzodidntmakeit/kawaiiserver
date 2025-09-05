@@ -24,7 +24,7 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 - **Lemmy** - Self-hosted Reddit
 - **Matrix + Element** - Self-hosted Discord (resource-heavy)
 - **Pixelfed** - Self-hosted Instagram
-- **PeerTube** - Self-hosted YouTube
+- **[Piped](./piped)** - Self-hosted YouTube ✅
 
 ### Web Server
 - **Traefik** – Docker-integrated, auto-SSL reverse proxy
