@@ -45,7 +45,7 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 
 ### Text Editing & Document Management
 - **Memos** – Lightweight Markdown notes
-- **Trilium** – Encrypted, hierarchical notes
+- **[Trilium](./trilium)** – Encrypted, hierarchical notes
 - **VS Code Server** – Browser-based code editor
 - **Bookstack** – Wiki-style documentation
 - **Paperless-ngx** - Document management system
