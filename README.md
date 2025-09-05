@@ -7,17 +7,17 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 ## 🖥️ Services
 
 ### Media Server
-- **Jellyfin** ✅ – Open source Netflix replacement, clean UI
-- **Navidrome** ✅ – Streams FLAC, pulls great metadata
-- **Prowlarr** ✅ – Indexer for *arr stack
-- **Sonarr** ✅ – TV shows (→ Jellyfin)
-- **Radarr** ✅ – Movies (→ Jellyfin)
-- **Lidarr** ✅ – Music (→ Navidrome)
+- **Jellyfin** – Open source Netflix replacement, clean UI
+- **Navidrome** – Streams FLAC, pulls great metadata
+- **Prowlarr** – Indexer for *arr stack
+- **Sonarr** – TV shows (→ Jellyfin)
+- **Radarr** – Movies (→ Jellyfin)
+- **Lidarr** – Music (→ Navidrome)
 - **Bazarr** – Subtitles for media servers
 
 ### File Storage
-- **Filebrowser** ✅ – File management in browser
-- **Nextcloud** ✅ – File syncing across devices
+- **Filebrowser** – File management in browser
+- **Nextcloud** – File syncing across devices
 
 ### Socials
 - **Mastodon** - Self-hosted Twitter
@@ -32,34 +32,34 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 - **Cloudflared tunnel** - Reverse Proxy with Cloudflare domain name (kawaii-san.org)
 
 ### Utility Server
-- **Vaultwarden** ✅ – Self-hosted password manager (Bitwarden fork)
+- **Vaultwarden** – Self-hosted password manager (Bitwarden fork) ✅
 - **Watchtower** – Automatic Docker updates
-- **qBittorrent** ✅ – Torrent client
+- **qBittorrent** – Torrent client
 
 ### Server Management
 - **Grafana + Prometheus** – Advanced monitoring & dashboards
 - **Netdata** – Deep server insights
-- **Portainer** ✅ – Docker container manager
-- **Dashdot** ✅ – Lightweight system stats
+- **Portainer** – Docker container manager
+- **Dashdot** – Lightweight system stats
 - **Tailscale** – Secure SSH / VPN overlay
 
 ### Text Editing & Document Management
-- **Memos** ✅ – Lightweight Markdown notes
-- **Trilium** ✅ – Encrypted, hierarchical notes
-- **VS Code Server** ✅ – Browser-based code editor
+- **Memos** – Lightweight Markdown notes
+- **Trilium** – Encrypted, hierarchical notes
+- **VS Code Server** – Browser-based code editor
 - **Bookstack** – Wiki-style documentation
 - **Paperless-ngx** - Document management system
 
 ### Privacy Tools
-- **SearXNG** ✅ – Private search engine
+- **SearXNG** – Private search engine
 - **Kiwix** – Local Wikipedia
-- **Gluetun** ✅ - VPN Client (Using Mullvad VPN)
+- **Gluetun** - VPN Client (Using Mullvad VPN)
 - **Fail2Ban** – SSH brute force protection
 - **UFW** – Firewall
 
 ### Local Knowledge
 - **Kiwix** – Local Wikipedia
-- **Ollama** ✅ – Local text generation
+- **Ollama** – Local text generation
 - **Stable Diffusion** – Image generation
 - **Wiki RAG** - An AI trained on and only focuses on wikipedia
 
@@ -71,7 +71,7 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 - **Firefly III** – Personal finance tracker
 
 ### Websites
-- **Homepage** ✅ – Dashboard hub for services
+- **Homepage** – Dashboard hub for services
 - **Media Hub** – Aggregated media service hub
 
 ---
