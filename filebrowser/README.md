@@ -36,7 +36,7 @@ mkdir -p ~/kawaiiserver/filebrowser
 cd ~/kawaiiserver/filebrowser
 ```
 
-### 2. Create the Docker Compose File
+### 2. Create the [Docker Compose File](./docker-compose.yml)
 ```bash
 nano docker-compose.yml
 ```
