@@ -5,7 +5,7 @@ A self-hosted, private cloud storage solution powered by Nextcloud and secured t
 ## ✨ What This Achieves
 
 - **Your Own Cloud Storage**: Complete control over your files, calendars, contacts, and more
-- **Zero-Open Ports**: Uses Cloudflare Tunnel for secure external access
+- **Zero-Open Ports**: Uses Cloudflare Tunnel for secure external access without exposing your server to the internet
 - **Cross-Platform Sync**: Works with all devices (desktop, mobile, web)
 - **Kawaii Privacy**: Your data stays on your server, not in someone else's cloud
 
@@ -26,19 +26,26 @@ kawaiiserver/
     ├── docker-compose.yml    # Main deployment file
     ├── apps/                 # Custom Nextcloud apps
     ├── config/               # Nextcloud configuration
-    ├── data/                 # User data (optional)
+    ├── data/                 # User data
     └── README.md            # This file
 ```
 
 ## 🛠️ Setup Instructions
 
-### 1. Clone and Configure
-
+### 1. Create the Directory Structure
 ```bash
+mkdir -p ~/kawaiiserver/nextcloud
 cd ~/kawaiiserver/nextcloud
 ```
 
-### 2. Generate Secure Passwords
+### 2. Create the [Docker Compose File](./docker-compose.yml)
+```bash
+nano docker-compose.yml
+```
+
+Paste the provided configuration.
+
+### 3. Generate Secure Passwords
 
 **Generate secure passwords for your database:**
 
@@ -52,9 +59,9 @@ openssl rand -base64 12
 # Example: xYzAbC1d2E3f4G
 ```
 
-### 3. Configure the Docker Compose
+### 4. Configure the Docker Compose
 
-Edit [`docker-compose.yml`](./docker-compose.yml) with your actual passwords:
+Edit the [`docker-compose.yml`](./docker-compose.yml) file with your actual passwords:
 
 ```yaml
 environment:
@@ -66,13 +73,13 @@ environment:
   - MYSQL_ROOT_PASSWORD=xYzAbC1d2E3f4G  # ← YOUR GENERATED ROOT PASSWORD
 ```
 
-### 4. Deploy Nextcloud
+### 5. Deploy Nextcloud
 
 ```bash
 docker compose up -d
 ```
 
-### 5. Configure Cloudflare Tunnel
+### 6. Configure Cloudflare Tunnel
 
 Add to your `/etc/cloudflared/config.yml`:
 
@@ -83,13 +90,13 @@ ingress:
   - service: http_status:404
 ```
 
-### 6. Create DNS Record
+### 7. Create DNS Record
 
 ```bash
 sudo cloudflared tunnel route dns kawaiinet cloud.kawaii-san.org
 ```
 
-### 7. Restart Cloudflare Tunnel
+### 8. Restart Cloudflare Tunnel
 
 ```bash
 sudo systemctl restart cloudflared
@@ -108,7 +115,31 @@ sudo systemctl restart cloudflared
    - Database name: `nextcloud`
    - Host: `nextcloud-db:3306`
 
-## 🎯 Access Points
+## 🔧 Configuration Options
+
+### Environment Variables (Optional)
+
+Create a `.env` file for easier management:
+
+```env
+MYSQL_PASSWORD=your_secure_password_here
+MYSQL_ROOT_PASSWORD=your_secure_root_password_here
+NEXTCLOUD_TRUSTED_DOMAINS=cloud.kawaii-san.org
+```
+
+### Volume Persistence
+
+Your Nextcloud data is stored in Docker volumes. To backup:
+
+```bash
+# Backup database
+docker exec nextcloud-db mysqldump -u nextcloud -p"$MYSQL_PASSWORD" nextcloud > nextcloud-backup-$(date +%Y%m%d).sql
+
+# Backup config and data
+tar czf nextcloud-data-backup-$(date +%Y%m%d).tar.gz apps/ config/ data/
+```
+
+## 🌐 Access Points
 
 - **Web Interface**: `https://cloud.kawaii-san.org`
 - **Desktop Client**: Download from nextcloud.com
@@ -159,22 +190,17 @@ docker compose up -d
 docker system prune
 ```
 
-### Backup Routine
+### Check Logs
 ```bash
-# Backup database
-docker exec nextcloud-db mysqldump -u nextcloud -p"$MYSQL_PASSWORD" nextcloud > nextcloud-backup-$(date +%Y%m%d).sql
-
-# Backup config and data
-tar czf nextcloud-data-backup-$(date +%Y%m%d).tar.gz apps/ config/ data/
+docker logs nextcloud
+docker logs nextcloud-db
+sudo journalctl -u cloudflared -f
 ```
 
-### Restore from Backup
+### Backup Routine
 ```bash
-# Restore database
-cat nextcloud-backup.sql | docker exec -i nextcloud-db mysql -u nextcloud -p"$MYSQL_PASSWORD" nextcloud
-
-# Restore files
-tar xzf nextcloud-data-backup.tar.gz
+# Add to crontab (crontab -e)
+0 2 * * * /path/to/your/nextcloud-backup-script.sh
 ```
 
 ## 📊 Recommended Apps to Install
@@ -196,29 +222,13 @@ tar xzf nextcloud-data-backup.tar.gz
 
 ## 📞 Need Help?
 
-1. **Check container logs**:
-   ```bash
-   docker logs nextcloud
-   docker logs nextcloud-db
-   ```
+1. Check the logs: `docker logs nextcloud`
+2. Verify tunnel: `sudo systemctl status cloudflared`
+3. Test locally: `curl http://localhost:9002`
+4. Check DNS: `dig cloud.kawaii-san.org`
 
-2. **Verify database connection**:
-   ```bash
-   docker exec -it nextcloud-db mysql -u nextcloud -p
-   ```
-
-3. **Check file permissions**:
-   ```bash
-   docker exec nextcloud chown -R www-data:www-data /var/www/html
-   ```
-
-4. **Test Cloudflare Tunnel**:
-   ```bash
-   curl http://localhost:9002
-   ```
+Remember: Your data is precious! Always maintain backups and keep your server updated.
 
 ---
 
 *KawaiiServer - Your data deserves a cute and secure home! 💖*
-
-*Remember: With great power (over your own data) comes great responsibility. Keep those backups current!*
