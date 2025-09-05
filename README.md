@@ -16,15 +16,15 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 - **Bazarr** – Subtitles for media servers
 
 ### File Storage
-- **[Filebrowser](./filebrowser)** – File management in browser ✅
-- **[Nextcloud](./nextcloud)** – File syncing across devices ✅
+- **[Filebrowser](./filebrowser)** – File management in browser
+- **[Nextcloud](./nextcloud)** – File syncing across devices
 
 ### Socials
 - **Mastodon** - Self-hosted Twitter
 - **Lemmy** - Self-hosted Reddit
 - **Matrix + Element** - Self-hosted Discord (resource-heavy)
 - **Pixelfed** - Self-hosted Instagram
-- **[Piped](./piped)** - Self-hosted YouTube ✅
+- **[Piped](./piped)** - Self-hosted YouTube
 
 ### Web Server
 - **Traefik** – Docker-integrated, auto-SSL reverse proxy
@@ -32,7 +32,7 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 - **Cloudflared tunnel** - Reverse Proxy with Cloudflare domain name (kawaii-san.org)
 
 ### Utility Server
-- **[Vaultwarden](./vaultwarden)** – Self-hosted password manager (Bitwarden fork) ✅
+- **[Vaultwarden](./vaultwarden)** – Self-hosted password manager (Bitwarden fork)
 - **Watchtower** – Automatic Docker updates
 - **qBittorrent** – Torrent client
 
