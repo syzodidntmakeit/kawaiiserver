@@ -16,15 +16,15 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 - **Bazarr** – Subtitles for media servers
 
 ### File Storage
-- **[Filebrowser](./filebrowser)** – File management in browser
-- **[Nextcloud](./nextcloud)** – File syncing across devices
+- **Filebrowser** – File management in browser
+- **Nextcloud** – File syncing across devices
 
 ### Socials
 - **Mastodon** - Self-hosted Twitter
 - **Lemmy** - Self-hosted Reddit
 - **Matrix + Element** - Self-hosted Discord (resource-heavy)
 - **Pixelfed** - Self-hosted Instagram
-- **[Piped](./piped)** - Self-hosted YouTube
+- **Piped** - Self-hosted YouTube
 
 ### Web Server
 - **Traefik** – Docker-integrated, auto-SSL reverse proxy
@@ -32,26 +32,26 @@ Welcome to my homelab setup! This repo documents my **self-hosted services, hard
 - **Cloudflared tunnel** - Reverse Proxy with Cloudflare domain name (kawaii-san.org)
 
 ### Utility Server
-- **[Vaultwarden](./vaultwarden)** – Self-hosted password manager (Bitwarden fork)
+- **Vaultwarden** – Self-hosted password manager (Bitwarden fork)
 - **Watchtower** – Automatic Docker updates
 - **qBittorrent** – Torrent client
 
 ### Server Management
 - **Grafana + Prometheus** – Advanced monitoring & dashboards
 - **Netdata** – Deep server insights
-- **[Portainer](./portainer)** – Docker container manager
+- **Portainer** – Docker container manager
 - **Dashdot** – Lightweight system stats
 - **Tailscale** – Secure SSH / VPN overlay
 
 ### Text Editing & Document Management
-- **[Memos](./memos)** – Lightweight Markdown notes
-- **[Trilium](./trilium)** – Encrypted, hierarchical notes
+- **Memos** – Lightweight Markdown notes
+- **Trilium** – Encrypted, hierarchical notes
 - **VS Code Server** – Browser-based code editor
 - **Bookstack** – Wiki-style documentation
 - **Paperless-ngx** - Document management system
 
 ### Privacy Tools
-- **[SearXNG](./searxng)** – Private search engine
+- **SearXNG** – Private search engine
 - **Kiwix** – Local Wikipedia
 - **Gluetun** - VPN Client (Using Mullvad VPN)
 - **Fail2Ban** – SSH brute force protection
